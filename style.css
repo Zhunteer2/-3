@@ -48,7 +48,7 @@
     height: 90px;
     background: red;
     transform: rotate(-45deg);
-    animation: glow 2s infinite alternate;
+    animation: glow 1s infinite alternate;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
   }
   
