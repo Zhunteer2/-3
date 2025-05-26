@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #333;
+  }
+  
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical */
+    align-items: center;     /* horizontal */
+    gap: 30px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #e91e63;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #c2185b;
+  }
+  
+  .container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Coração feito com CSS */
+  .heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: red;
+    transform: rotate(-45deg);
+    animation: glow 2s infinite alternate;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background: red;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -50px;
+    left: 0;
+  }
+  
+  .heart::after {
+    top: 0;
+    left: 50px;
+  }
+  
+  @keyframes glow {
+  from {
+    box-shadow: 0 0 75px rgba(255, 0, 0, 1);
+  }
+  to {
+    box-shadow: 0 0 150px rgba(255, 0, 0, 1);
+  }
+}
+  
+  .texto {
+    margin-top: 5%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+  }
+  
